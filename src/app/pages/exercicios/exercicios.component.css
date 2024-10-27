@@ -1,0 +1,115 @@
+.exercicios_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3em 0px;
+}
+
+.exercicios_container__regras{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    background-image: url('/assets/public/img/exercicio/fundo_exercicio.jpg');
+    height: 70vh;
+    background-size: 90% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;   
+}
+
+h1{
+    display: flex;
+    font-size: 4rem;
+    padding: 1em;
+    font-weight: bold;
+}
+
+p{
+    display: flex;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+h3{
+    display: flex;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+.exercicios_container__exercicio_m1b1,
+.exercicios_container__exercicio_m1b2,
+.exercicios_container__exercicio_m2b1,
+.exercicios_container__exercicio_m2b2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0px 3em 0px;
+    height: 100%;
+}
+
+.exercicios_container__exercicio_m1b1{
+    background-color: #FFD300;
+}
+
+.exercicios_container__exercicio_m2b1{
+    background-color:#0072E7;
+}
+
+h4{
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+    text-indent: 2em;
+}
+
+.exercicios_container__exercicio_secao {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+    grid-template-rows: 1fr 1fr; /* 2 linhas iguais */
+    gap: 6em; /* Espaçamento entre os quadrantes */
+}
+
+.exercicios_container__exercicio_secao-icon-01,
+.exercicios_container__exercicio_secao-icon-02,
+.exercicios_container__exercicio_secao-icon-03,
+.exercicios_container__exercicio_secao-icon-04 {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 2em;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.exercicios_container__exercicio_secao-icon-01{
+    color: black;
+    background-color: #FC2397;
+}
+
+.exercicios_container__exercicio_secao-icon-02{
+    color: #fff;
+    background-color: #0072E7;
+    ;
+}
+
+.exercicios_container__exercicio_secao-icon-03{
+    color: black;
+    background-color: #FFD300;
+    ;
+}
+
+.exercicios_container__exercicio_secao-icon-04{
+    color: #fff;
+    background-color: #0072E7;
+    ;
+}

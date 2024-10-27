@@ -1,0 +1,36 @@
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #002B58;
+    align-items: center;
+    color: #fff;
+}
+
+.footer_container__container-logo{
+    display: flex;
+    margin: 1em 0 2em 1em;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_logo_estudaki{
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+
+h4, p{
+    margin-bottom: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    margin-bottom: 0.5em;
+}
+
+p{
+    font-weight: 700;
+}

@@ -1,0 +1,112 @@
+.navbar_container{
+    display: flex;
+    flex-direction: row;
+    background-color: #002B58;
+    justify-content: space-between;
+    height: 4em;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar_container__container-logo{
+    display: flex;
+    margin-left: 1em;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_logo_estudaki{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    display: inline-flex;
+    padding: 1em;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px; /* Espessura da linha */
+    bottom: 0;
+    left: 0;
+    background-color: #FFD300; /* Cor da linha */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.btn-signin{
+    display: flex;
+    background-color: #FFD300;
+    width: 6em;
+    height: 2em;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 1em;
+}
+
+/* Estilos para o submenu */
+.submenu {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute; /* Permite que o submenu fique acima do menu principal */
+    top: 100%; /* Coloca o submenu logo abaixo do item pai */
+    left: 0; /* Alinha o submenu à esquerda do item pai */
+    background-color: #002B58; /* Cor de fundo do submenu */
+    padding: 0.5em 0; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item pai */
+li:hover .submenu {
+    display: block; /* Exibe o submenu ao passar o mouse */
+}
+
+/* Estilização dos itens do submenu */
+.submenu li {
+    display: flex; /* Permite que o conteúdo seja centralizado */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0.5em 0; /* Espaçamento interno dos itens do submenu */
+    color: #fff; /* Cor do texto dos links */
+    cursor: pointer; /* Indica que é clicável */
+    margin: 1em 0px;
+}
+
+.submenu li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    width: 100%; /* Faz com que o link ocupe toda a largura do item */
+    display: block; /* Faz o link ocupar toda a área do item */
+    padding: 0px 1em;
+}
+
+.submenu li:hover {
+    background-color: #FFD300; /* Cor de fundo ao passar o mouse sobre os itens do submenu */
+}
+
+.submenu li a:hover{
+    color:#002B58;
+    font-weight: 600;
+}
+
+.menu-principal {
+    font-size: 1.5em;
+}
