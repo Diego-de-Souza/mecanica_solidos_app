@@ -15,11 +15,12 @@ export class MaterialTextualComponent {
   constructor(private dialog: MatDialog) { }
 
   openModal(content: string): void {
-    const dialogRef = this.dialog.open(ContentModalComponent, {
-      data: { content },
+    this.dialog.open(ContentModalComponent, {
+      data: { content: content },
       width: '80vw',
       maxWidth: '80vw',
       panelClass: 'custom-modal-panel'  // Classe personalizada para o tema
     });
   }
+
 }

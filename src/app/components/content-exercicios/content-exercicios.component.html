@@ -1,0 +1,43 @@
+<section class="content-modal">
+  <header class="modal-header">
+      <h2 class="templateConteudo">{{ title }}</h2>
+      <button mat-button mat-dialog-close class="close-button top-close">
+          <span class="close-icon">✖</span>
+      </button>
+  </header>
+  
+  <div class="modal-content">
+      <div class="pergunta">Pergunta 1</div>
+      <form>
+          <label [ngClass]="getOptionClass('A')">
+            <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="A">
+            Teste A
+          </label>
+          <br>
+          <label [ngClass]="getOptionClass('B')">
+            <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="B">
+            Teste B
+          </label>
+          <br>
+          <label [ngClass]="getOptionClass('C')">
+            <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="C">
+            Teste C
+          </label>
+          <br>
+          <label [ngClass]="getOptionClass('D')">
+            <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="D">
+            Teste D
+          </label>
+      </form>
+      <button mat-flat-button (click)="submitAnswer()">Enviar Resposta</button>
+  </div>
+  <br />
+    <hr>
+    <br />
+    <div class="resposta" id="resposta">
+        Teste
+    </div>
+  <footer class="modal-footer">
+    <button mat-button mat-dialog-close>Fechar</button>
+  </footer>
+</section>

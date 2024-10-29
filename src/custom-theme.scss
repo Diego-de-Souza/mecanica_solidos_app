@@ -48,8 +48,26 @@ $mecanica_solidos_app-theme: mat.define-theme((
     justify-content: center;
 
     // Configurações adicionais para responsividade
-    width: 100%;
-    max-width: 80vw;
+    max-width: 95%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+.custom-modal-panel2 {
+  .mat-dialog-container {
+    z-index: 2000; // Certifique-se de que este valor está acima dos outros elementos da página
+    background-color: white; // Ajuste conforme necessário
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    // Centraliza o conteúdo e facilita a responsividade
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // Configurações adicionais para responsividade
+    max-width: 95%;
     max-height: 80vh;
     overflow-y: auto;
   }
