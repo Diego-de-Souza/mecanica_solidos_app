@@ -1,0 +1,76 @@
+<section class="content-modal">
+    <header class="modal-header">
+        <h2 class="templateConteudo">{{title}}</h2>
+        <button mat-button mat-dialog-close class="close-button top-close">
+            <span class="close-icon">✖</span>
+        </button>
+    </header>
+    
+    <div class="modal-content">
+        <div class="modal_exercicio_praticos_exec">
+            <img src="../../../../public/assets/public/img/exercicio/img_exercicio15.jpg" alt="">
+            <div>
+                <!-- Botão para abrir a calculadora -->
+                <button (click)="toggleCalculator()" mat-button>
+                  Abrir Calculadora Científica
+                </button>
+              </div>
+        </div>
+        <div class="pergunta">
+            Para o desenho acima, pede-se para calcular (CUIDADO COM OS SINAIS!!!):
+        </div>
+        <form class="form-container">
+            <label>
+                Tensão da estrutura (σ) (3 casas)
+                <input type="text" [(ngModel)]="respostas.tensao" name="tensao" [ngClass]="{'success': resultados.tensao, 'error': resultados.tensao === false}" placeholder="[MPa]" />
+            </label>
+            <label>
+                Coeficiente de Segurança (S) (2 casas)
+                <input type="text" [(ngModel)]="respostas.seguranca" name="seguranca" [ngClass]="{'success': resultados.seguranca, 'error': resultados.seguranca === false}" placeholder=""/>
+            </label>
+            <label>
+                Deformação na Tensão de escoamento (εe) (5 casas)
+                <input type="text" [(ngModel)]="respostas.deformacaoEscoamento" name="deformacaoEscoamento" [ngClass]="{'success': resultados.deformacaoEscoamento, 'error': resultados.deformacaoEscoamento === false}" placeholder=""/>
+            </label>
+            <label>
+                Módulo de Elasticidade (E) (3 casas)
+                <input type="text" [(ngModel)]="respostas.elasticidade" name="elasticidade" [ngClass]="{'success': resultados.elasticidade, 'error': resultados.elasticidade === false}" placeholder="[GPa]" />
+            </label>
+            <label>
+                Deformação Longitudinal (ε) (5 casas)
+                <input type="text" [(ngModel)]="respostas.deformacaoLongitudinal" name="deformacaoLongitudinal" [ngClass]="{'success': resultados.deformacaoLongitudinal, 'error': resultados.deformacaoLongitudinal === false}" placeholder="[mm/mm]" />
+            </label>
+            <label>
+                Deformação Transversal (εt) (5 casas)
+                <input type="text" [(ngModel)]="respostas.deformacaoTransversal" name="deformacaoTransversal" [ngClass]="{'success': resultados.deformacaoTransversal, 'error': resultados.deformacaoTransversal === false}" placeholder="[mm/mm]" />
+            </label>
+            <label>
+                Variação de Comprimento (Δl) (3 casas)
+                <input type="text" [(ngModel)]="respostas.variacaoComprimento" name="variacaoComprimento" [ngClass]="{'success': resultados.variacaoComprimento, 'error': resultados.variacaoComprimento === false}" placeholder="[mm]" />
+            </label>
+            <label>
+                Variação de Largura (Δw) (5 casas)
+                <input type="text" [(ngModel)]="respostas.variacaoLargura" name="variacaoLargura" [ngClass]="{'success': resultados.variacaoLargura, 'error': resultados.variacaoLargura === false}" placeholder="[mm]" />
+            </label>
+            <button type="submit" mat-flat-button (click)="verificarRespostas()">VERIFICAR</button>
+        </form>
+    </div>
+    
+    <footer class="modal-footer">
+      <button mat-button mat-dialog-close>Fechar</button>
+    </footer>
+  </section>
+  <!-- Modal ou iframe da calculadora -->
+<div *ngIf="isCalculatorOpen" class="calculator-container">
+    <button (click)="toggleCalculator()" mat-button>
+        Fechar Calculadora Científica
+    </button>
+    <div class="calculator-header">
+      <span>Calculadora Científica</span>
+      <button (click)="toggleCalculator()" mat-icon-button>Fechar</button>
+    </div>
+    <iframe
+      src="https://web2.0calc.com/"
+      style="width: 320px; height: 500px; border: none;"
+    ></iframe>
+  </div>

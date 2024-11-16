@@ -200,7 +200,16 @@ export const conteudoTextual = [
     },
     {
         id:5,
-        material:[]
+        material:[
+            {
+                subtitulo:`Propriedade dos Materiais`,
+                img: "../../../../public/assets/material_textual/fabricadoprojeto_curva_tensao_deformacao_ensaio_tracao_tipico_aco.jpg",
+                img_2: "../../../../public/assets/material_textual/tensaoxdeformacao.png",
+                texto: "<p style='font-size: 2em;line-height: 1.6;'>O ensaio de tração é um dos testes mais comuns e fundamentais na Mecânica dos Sólidos para entender como um material se comporta quando submetido a uma carga de tração. Este ensaio mede a relação entre a força aplicada (tração) e a deformação resultante no material. Essa relação é graficamente representada em um gráfico tensão-deformação (também chamado de gráfico de curva de tração).</p><p style='font-size: 2em;line-height: 1.6;'>σ = Tensão</p><p style='font-size: 2em;line-height: 1.6;'>σLTR ou σr = Tensão Limite de Resisitencia</p><p style='font-size: 2em;line-height: 1.6;'>σe = Tensão de escoamento</p><p style='font-size: 2em;line-height: 1.6;'>σrup = Tensão de ruptura</p><p style='font-size: 2em;line-height: 1.6;'>ε = Deformação / Modulo de Elasticidade</p><p style='font-size: 2em;line-height: 1.6;'>εe = Deformação na tensão de escoamento</p>",
+                activeBtn: "flex",
+                url_file: "../../../../public/file/Ensaio_de_Tensão_X_Deformação.pdf"
+            }
+        ]
     },
     {
         id:6,

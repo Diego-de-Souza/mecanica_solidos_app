@@ -8,37 +8,37 @@
     <section class="exercicios_container__exercicio_m1b1">
         <h4>M1-B1</h4>
         <div class="exercicios_container__exercicio_secao">
-            <div class="exercicios_container__exercicio_secao-icon-01" (click)="openModalExercicio('Exercício - 01')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-01" (click)="openModalExercicio('Exercício - 02')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-01" (click)="openModalExercicio('Exercício - 03')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-01" (click)="openModalExercicio('exercício - 04')">Exercicio - 01</div>
+            <div class="exercicios_container__exercicio_secao-icon-01" [attr.numberModule]="0" (click)="openModalExercicio('Exercício - 01', 0)">Exercicio - 01</div>
+            <div class="exercicios_container__exercicio_secao-icon-01" [attr.numberModule]="1" (click)="openModalExercicio('Exercício - 02', 1)">Exercicio - 02</div>
+            <div class="exercicios_container__exercicio_secao-icon-01" [attr.numberModule]="2" (click)="openModalExercicio('Exercício - 03', 2)">Exercicio - 03</div>
+            <div class="exercicios_container__exercicio_secao-icon-01" [attr.numberModule]="3" (click)="openModalExercicio('exercício - 04',3)">Exercicio - 04</div>
         </div>
     </section>
     <section class="exercicios_container__exercicio_m1b2">
         <h4>M1-B2</h4>
         <div class="exercicios_container__exercicio_secao">
-            <div class="exercicios_container__exercicio_secao-icon-02" (click)="openModalExercicio('exercicio - 05')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-02" (click)="openModalExercicio('exercicio - 06')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-02" (click)="openModalExercicio('exercício - 07')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-02" (click)="openModalExercicio('exercício - 08')">Exercicio - 01</div>
+            <div class="exercicios_container__exercicio_secao-icon-02" [attr.numberModule]="4" (click)="openModalExercicio('exercicio - 05',4)">Exercicio - 05</div>
+            <div class="exercicios_container__exercicio_secao-icon-02" [attr.numberModule]="5" (click)="openModalExercicio('exercicio - 06', 5)">Exercicio - 06</div>
+            <div class="exercicios_container__exercicio_secao-icon-02" [attr.numberModule]="6" (click)="openModalExercicio('exercício - 07', 6)">Exercicio - 07</div>
+            <div class="exercicios_container__exercicio_secao-icon-02" [attr.numberModule]="7" (click)="openModalExercicio('exercício - 08' ,7)">Exercicio - 08</div>
         </div>
     </section>
     <section class="exercicios_container__exercicio_m2b1">
         <h4>M2-B1</h4>
         <div class="exercicios_container__exercicio_secao">
-            <div class="exercicios_container__exercicio_secao-icon-03" (click)="openModalExercicio('exerciício - 09')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-03" (click)="openModalExercicio('exercício - 10')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-03" (click)="openModalExercicio('exercício - 11')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-03" (click)="openModalExercicio('exercício - 12')">Exercicio - 01</div>
+            <div class="exercicios_container__exercicio_secao-icon-03" [attr.numberModule]="8" (click)="openModalExercicio('exerciício - 09', 8)">Exercicio - 09</div>
+            <div class="exercicios_container__exercicio_secao-icon-03" [attr.numberModule]="9" (click)="openModalExercicio('exercício - 10', 9)">Exercicio - 10</div>
+            <div class="exercicios_container__exercicio_secao-icon-03"[attr.numberModule]="10" (click)="openModalExercicio('exercício - 11', 10)">Exercicio - 11</div>
+            <div class="exercicios_container__exercicio_secao-icon-03" [attr.numberModule]="11" (click)="openModalExercicio('exercício - 12', 11)">Exercicio - 12</div>
         </div>
     </section>
     <section class="exercicios_container__exercicio_m2b2">
         <h4>M2-B1</h4>
         <div class="exercicios_container__exercicio_secao">
-            <div class="exercicios_container__exercicio_secao-icon-04" (click)="openModalExercicio('exercício - 13')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-04" (click)="openModalExercicio('exercício - 14')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-04" (click)="openModalExercicio('exercício - 15')">Exercicio - 01</div>
-            <div class="exercicios_container__exercicio_secao-icon-04" (click)="openModalExercicio('exerc[icio - 16]')">Exercicio - 01</div>
+            <div class="exercicios_container__exercicio_secao-icon-04" [attr.numberModule]="12" (click)="openModalExercicio('exercício - 13', 12)">Exercicio - 13</div>
+            <div class="exercicios_container__exercicio_secao-icon-04" [attr.numberModule]="13" (click)="openModalExercicio('exercício - 14', 13)">Exercicio - 14</div>
+            <div class="exercicios_container__exercicio_secao-icon-04" [attr.numberModule]="14" (click)="openModalExercicioPratico('exercício - 15', 14)">Exercicio - 15</div>
+            <div class="exercicios_container__exercicio_secao-icon-04" numberModule="16" (click)="openModalExercicioPratico2('exercício - 16]', numberModule)">Exercicio - 16</div>
         </div>
     </section>
 </section>

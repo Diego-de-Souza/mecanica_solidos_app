@@ -40,11 +40,6 @@
     padding-right: 8px;
 }
 
-.modal-content p {
-    margin-bottom: 16px;
-    line-height: 1.6;
-}
-
 /* Rodapé do modal */
 .modal-footer {
     display: flex;

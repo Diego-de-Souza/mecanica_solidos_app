@@ -7,26 +7,26 @@
   </header>
   
   <div class="modal-content">
-      <div class="pergunta">Pergunta 1</div>
+      <div class="pergunta">{{question.pergunta}}</div>
       <form>
           <label [ngClass]="getOptionClass('A')">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="A">
-            Teste A
+            {{question.respA}}
           </label>
           <br>
           <label [ngClass]="getOptionClass('B')">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="B">
-            Teste B
+            {{question.respB?.trimStart}}
           </label>
           <br>
           <label [ngClass]="getOptionClass('C')">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="C">
-            Teste C
+            {{question.respC}}
           </label>
           <br>
           <label [ngClass]="getOptionClass('D')">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="D">
-            Teste D
+            {{question.respD}}
           </label>
       </form>
       <button mat-flat-button (click)="submitAnswer()">Enviar Resposta</button>
@@ -35,7 +35,7 @@
     <hr>
     <br />
     <div class="resposta" id="resposta">
-        Teste
+        {{question.dica}}
     </div>
   <footer class="modal-footer">
     <button mat-button mat-dialog-close>Fechar</button>

@@ -1,9 +1,10 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MAT_DIALOG_DATA, MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from '@angular/material/icon';
 import {FormsModule} from '@angular/forms';
+import {conteudoExercicio} from '../../data/conteudo_exercicio';
 
 @Component({
   selector: 'app-content-exercicios',
@@ -12,15 +13,21 @@ import {FormsModule} from '@angular/forms';
   templateUrl: './content-exercicios.component.html',
   styleUrl: './content-exercicios.component.css'
 })
-export class ContentExerciciosComponent {
+export class ContentExerciciosComponent implements OnInit{
   title: string = '';
   selectedAnswer: string = '';
   correctAnswer: string = 'B';
   feedbackClass: { [key: string]: string } = {};
+  question: { pergunta?: string; respA?: string; respB?: string; respC?: string; respD?: string; resposta?: string; dica?: string } = {};
+  idQuestion: number = 0;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: { content: string }) {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: { content: string, idContent: number }) {
     this.title = data.content;
-    console.log(this.title)
+    this.idQuestion = data.idContent;
+  }
+  ngOnInit(): void {
+    this.question = conteudoExercicio[this.idQuestion];
+    this.correctAnswer = this.question.resposta? this.question.resposta: 'B';
   }
 
   submitAnswer(): void {
