@@ -9,27 +9,35 @@
   <div class="modal-content">
       <div class="pergunta">{{question.pergunta}}</div>
       <form>
-          <label [ngClass]="getOptionClass('A')">
+        <br/>
+          <label [ngClass]="getOptionClass('A')" class="space_answer">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="A">
             {{question.respA}}
           </label>
-          <br>
-          <label [ngClass]="getOptionClass('B')">
+        <br/>
+          <label [ngClass]="getOptionClass('B')" class="space_answer">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="B">
             {{question.respB?.trimStart}}
           </label>
-          <br>
-          <label [ngClass]="getOptionClass('C')">
+          <br/>
+          <label [ngClass]="getOptionClass('C')" class="space_answer">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="C">
             {{question.respC}}
           </label>
-          <br>
-          <label [ngClass]="getOptionClass('D')">
+          <br/>
+          <label [ngClass]="getOptionClass('D')" class="space_answer">
             <input type="radio" name="alternative" [(ngModel)]="selectedAnswer" value="D">
             {{question.respD}}
           </label>
+          <br/>
       </form>
-      <button mat-flat-button (click)="submitAnswer()">Enviar Resposta</button>
+      <br/>
+      <button 
+        mat-flat-button 
+        (click)="submitAnswer()" 
+        [disabled]="!selectedAnswer">
+        Enviar Resposta
+      </button>
   </div>
   <br />
     <hr>

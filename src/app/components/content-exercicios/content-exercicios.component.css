@@ -68,5 +68,9 @@
 
 .error{
     color:red;
-    font-weight: 900;
+    font-weight: 900; 
+}
+
+.space_answer{
+    margin: 1em 1em;
 }
