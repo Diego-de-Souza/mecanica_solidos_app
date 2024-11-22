@@ -1,17 +1,64 @@
 # MecanicaSolidosApp
 
-Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 18.2.10.
+Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 18.2.10 e Bootstrap 6.0.1.
 
-## Descrição do Projeto
+O **MecanicaSolidosApp** é um aplicativo educacional projetado para auxiliar no estudo da disciplina de Mecânica dos Sólidos. Ele oferece uma experiência rica e interativa por meio de várias funcionalidades:
 
-O **MecanicaSolidosApp** é um aplicativo educacional destinado ao estudo da matéria de Mecânica dos Sólidos. O aplicativo possui as seguintes funcionalidades:
+- **Conteúdo Textual:** Explicações detalhadas sobre conceitos fundamentais e avançados de Mecânica dos Sólidos.
+- **Área de Exercícios:** Permite que os usuários pratiquem e consolidem seus conhecimentos por meio de atividades práticas.
+- **Galeria de Vídeos:** Inclui vídeos didáticos que complementam o conteúdo teórico e facilitam a compreensão dos tópicos abordados.
+- **Referências Bibliográficas:** Apresenta fontes confiáveis para estudo adicional e aprofundamento nos temas explorados.
 
-- **Conteúdo Textual:** Fornece explicações detalhadas sobre conceitos de Mecânica dos Sólidos.
-- **Área de Exercícios:** Permite que os usuários pratiquem e testem seus conhecimentos sobre a matéria.
-- **Galeria de Vídeos:** Inclui vídeos relevantes que complementam o conteúdo teórico e ajudam na compreensão dos tópicos abordados.
-- **Referências Bibliográficas:** Apresenta fontes adicionais para estudo e aprofundamento.
+Atualmente, o conteúdo está mockado em arquivos JSON ou diretamente no HTML.
 
-Atualmente, todo o conteúdo está mockado em arquivos JSON ou no próprio HTML. A intenção é integrar o aplicativo com uma API no futuro para recuperar os dados de um banco de dados.
+## Escolha de cores e design
+
+A identidade visual foi cuidadosamente elaborada para proporcionar uma experiência agradável e eficaz:
+
+- **Cores:** A paleta inicial foi inspirada na identidade da **FESA**. Entretanto, para evitar o uso excessivo do azul e amarelo, que em tons atuais podem induzir uma sensação de conforto excessivo e até sonolência, foi introduzida uma variação de rosa. Essa escolha visa capturar a atenção dos usuários, especialmente considerando que muitos estudantes de Engenharia da Computação, no período noturno, possuem uma rotina de trabalho intensa durante o dia.
+
+- **Aplicativo Mobile:** Para a versão mobile, foram usados tons mais simples e amenos, pensando no uso em transporte público ou momentos de deslocamento, com o objetivo de criar uma experiência leve e intuitiva.
+
+- **Disposição dos Itens:** O layout foi projetado para ser simples e funcional, visando atender às necessidades do público acadêmico. A navegação intuitiva e o acesso direto aos ícones e conteúdos principais foram priorizados para garantir uma interação eficiente.
+
+---
+
+# Descrição de Atualizações Futuras
+
+Futuramente, a principal evolução será a integração de uma **API**, substituindo os dados mockados. Essa alteração permitirá funcionalidades mais dinâmicas, como o gerenciamento de usuários e o armazenamento seguro de dados.
+
+## Itens planejados para atualização
+
+1. **API:**  
+   Desenvolvimento de uma API robusta para o consumo de dados no front-end, permitindo maior dinamismo e integração.
+   
+2. **Módulo de Login:**  
+   Implementação de autenticação segura, permitindo aos usuários criar contas, salvar progresso e acessar uma área personalizada.
+
+3. **Modo Jornada:**  
+   Introdução de um modo interativo que transforma o aprendizado em uma experiência gamificada, incentivando o estudo de forma divertida e descontraída.
+
+4. **Logs:**  
+   Implementação de um sistema de logs para coleta de métricas, auxiliando na otimização de desempenho, identificação de melhorias no conteúdo e na experiência geral do usuário.
+
+5. **Inclusão de Outras Disciplinas:**  
+   Graças à arquitetura modular, será possível adicionar conteúdos de outras disciplinas ou expandir os de Mecânica dos Sólidos com facilidade.
+
+---
+
+## Tecnologias Cogitadas para Atualizações
+
+1. **Backend:**  
+   - Utilização do **NestJS** para desenvolver a API.
+
+2. **Banco de Dados:**  
+   - **MySQL** para armazenar dados transacionais.  
+   - **MongoDB** para gerenciamento eficiente de logs e dados de telemetria.
+
+3. **Hospedagem:**  
+   - Soluções em nuvem como **AWS**, **Azure**, ou **Oracle**, configuradas com uma arquitetura de serviço único.
+
+Essas alterações visam oferecer uma plataforma mais robusta, personalizada e com maior capacidade de expansão, sempre com foco na experiência do estudante.
 
 ## Servidor de Desenvolvimento
 
